@@ -8,6 +8,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
+import MenuSwitch from './menuSwitch';
 
 const ShowProducts = () => {
     const url = 'http://localhost:5000/api/products';
@@ -108,9 +109,10 @@ const ShowProducts = () => {
         <>
             {/* Navbar */}
             <AppBar position="static">
+            <MenuSwitch/>
                 <Toolbar>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        puede decir lo que sea
+                        Gestión de productos
                     </Typography>
                     <Button variant="contained" color="secondary" onClick={() => openModal(1)}>
                         Añadir Producto

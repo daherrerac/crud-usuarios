@@ -8,6 +8,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
+import MenuSwitch from './menuSwitch';
 
 const ShowUsers = () => {
     const url = 'http://localhost:5000/api/users';
@@ -110,6 +111,7 @@ const ShowUsers = () => {
         <>
             {/* Navbar */}
             <AppBar position="static">
+            <MenuSwitch/>
                 <Toolbar>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Gestión de Usuarios
